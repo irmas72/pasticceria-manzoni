@@ -30,20 +30,20 @@ export default function About() {
             <p>
               Da <strong>{shop.years}</strong>, il nostro laboratorio artigianale si dedica
               alla creazione dell’eccellenza pasticcera per soddisfare anche i palati più
-              esigenti. Operiamo in ambienti moderni, dove i nostri maestri pasticceri
-              selezionano esclusivamente <strong>ingredienti naturali e di prima scelta</strong>.
+              esigenti. I nostri maestri pasticceri selezionano esclusivamente
+              <strong> materie prime naturali e di prima scelta</strong> e lavorano ogni
+              dolce <strong>a mano</strong>, con la pazienza e la precisione di un’arte antica.
             </p>
             <p>
               Il nostro obiettivo è semplice e ambizioso: portare ogni giorno sulla vostra
-              tavola prodotti <em>sani, freschi e genuini</em>. Sotto un rigoroso controllo
-              di qualità sforniamo quotidianamente pasticceria fresca e secca, torte farcite
-              e da forno, semifreddi e creazioni artigianali.
+              tavola prodotti <em>freschi, genuini e irresistibilmente buoni</em>. Ogni
+              creazione è curata nei minimi dettagli — dalla farcitura alla decorazione —
+              perché per noi <strong>la bellezza di un dolce è parte del suo sapore</strong>.
             </p>
             <p>
-              Siamo attenti alle moderne esigenze alimentari e promuoviamo un consumo
-              responsabile: ogni fase della produzione è improntata al rispetto per
-              l’ambiente. Scegliere la Pasticceria Manzoni significa scegliere un dolce
-              non solo buono, ma anche <strong>sano e consapevole</strong>.
+              Attenzione alle esigenze alimentari, rispetto per l’ambiente e amore per il
+              mestiere: scegliere la Pasticceria Manzoni significa scegliere un dolce
+              <strong> buono, curato e fatto con passione</strong>, come una volta.
             </p>
           </div>
 

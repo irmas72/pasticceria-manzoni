@@ -11,7 +11,7 @@ export const shop = {
   years: 'oltre 45 anni',
   tagline: 'Alta pasticceria artigianale nel cuore di Saronno',
   intro:
-    'Da oltre 45 anni ogni dolce nasce a mano nel nostro laboratorio: ingredienti naturali di prima scelta, gesti della tradizione e una cura maniacale per il dettaglio e la bellezza di ogni creazione.',
+    'Da oltre 45 anni ogni dolce nasce a mano nel nostro laboratorio: materie prime naturali di prima scelta, i gesti lenti della tradizione e una cura quasi maniacale per ogni dettaglio. Perché la bellezza di una creazione è già una promessa di bontà.',
   address: 'Via Manzoni 2/a, 21047 Saronno (VA)',
   phone: '02 9606535',
   phoneRaw: '+390296065350',
@@ -33,27 +33,27 @@ export const shop = {
 
 export const heroImage = img('5902101') // torta al cioccolato e lamponi
 
-// Punti di forza (sotto l'hero / in Chi siamo)
+// Punti di forza (Chi siamo)
 export const values = [
   {
     icon: 'leaf',
-    title: 'Ingredienti naturali',
-    text: 'Uova freschissime, burro di panna, zucchero e farina: solo materie prime di prima scelta.',
+    title: 'Materie prime di prima scelta',
+    text: 'Uova freschissime, burro di panna, zucchero e farina: solo ingredienti naturali e genuini, perché la vera bontà nasce da qui.',
   },
   {
     icon: 'hand',
-    title: 'Lavorazione artigianale',
-    text: 'Ogni creazione nasce dalle mani dei nostri maestri pasticceri, ogni giorno.',
+    title: 'Fatto a mano, ogni giorno',
+    text: 'Ogni creazione è lavorata e modellata a mano dai nostri maestri pasticceri, con la pazienza e la passione dell’arte dolciaria.',
+  },
+  {
+    icon: 'star',
+    title: 'Cura maniacale del dettaglio',
+    text: 'Rifiniture eseguite a mano e decori curati uno a uno: ogni dolce è bello da guardare prima ancora che buono da gustare.',
   },
   {
     icon: 'heart',
     title: 'Etica e sostenibilità',
-    text: 'Consumo responsabile e rispetto per l’ambiente, dalla materia prima allo smaltimento.',
-  },
-  {
-    icon: 'star',
-    title: 'Tradizione dal 1980',
-    text: 'Oltre 45 anni di esperienza al servizio del gusto e della qualità.',
+    text: 'Consumo responsabile e rispetto per l’ambiente, in ogni fase: dalla scelta delle materie prime fino allo smaltimento.',
   },
 ]
 
@@ -62,7 +62,7 @@ export const cosaFacciamo = {
   kicker: 'Cosa facciamo',
   title: 'Feste ed eventi: tutto il gusto del dolce e del salato',
   intro:
-    'Se stai organizzando una festa, pensiamo a tutto noi: dalla torta perfetta al buffet salato, per garantirti un successo assicurato.',
+    'Se stai organizzando una festa, pensiamo a tutto noi: dalla torta perfetta al buffet salato, tutto preparato a mano con la stessa cura, per regalarti un successo assicurato.',
   features: [
     {
       id: 'torte-creazioni',
@@ -70,7 +70,7 @@ export const cosaFacciamo = {
       title: 'Le nostre torte e creazioni dolci',
       image: img('3933755'),
       text:
-        'Realizziamo torte classiche o moderne e spettacolari creazioni di cake design. Possiamo personalizzare ogni torta con fotografie, disegni o decorazioni speciali, oltre a preparare cupcake e biscottoni decorati su misura per il tuo tema.',
+        'Realizziamo torte classiche e moderne e spettacolari creazioni di cake design, personalizzate con fotografie, disegni e decorazioni in pasta di zucchero modellate a mano. Cupcake e biscottoni decorati su misura per il tuo tema, curati in ogni singolo dettaglio.',
     },
     {
       id: 'lievitati',
@@ -78,7 +78,7 @@ export const cosaFacciamo = {
       title: 'Grandi lievitati',
       image: imgS('3861263'),
       text:
-        'Da oltre 45 anni i nostri lievitati sono il nostro miglior biglietto da visita: Panettoni, Pandori, Veneziane e Colombe, secondo l’antica tradizione dolciaria e con materie prime di altissima qualità. Sempre fragranti e, per scelta, rigorosamente senza conservanti, realizzati solo nei periodi delle festività per garantire la massima freschezza.',
+        'Da oltre 45 anni i nostri grandi lievitati sono il nostro orgoglio: Panettoni, Pandori, Veneziane e Colombe, secondo l’antica tradizione dolciaria e con materie prime di altissima qualità. Soffici, profumati e rigorosamente senza conservanti, sfornati solo nei periodi delle festività per offrirti tutta la loro bontà appena fatta.',
     },
     {
       id: 'eventi-salato',
@@ -86,7 +86,7 @@ export const cosaFacciamo = {
       title: 'Un ricco assortimento salato',
       image: imgS('6021537'),
       text:
-        'Per i tuoi rinfreschi e aperitivi offriamo una selezione di specialità salate sempre fresche, oltre a spettacolari torte per cerimonie ed eventi. E per un pensiero speciale, un vasto assortimento di articoli regalo e scatole delle migliori marche.',
+        'Per i tuoi rinfreschi e aperitivi, una selezione di specialità salate sempre fresche, preparate ogni giorno, oltre a spettacolari torte per cerimonie ed eventi. E per un pensiero speciale, un raffinato assortimento di articoli regalo e confezioni delle migliori marche.',
       list: [
         'Pizzette, salatini e tartine assortite',
         'Panini morbidi e brioches salate farcite',
@@ -98,7 +98,7 @@ export const cosaFacciamo = {
   territorio: {
     title: 'Eccellenza artigiana e sapori del territorio',
     text:
-      'Dalle torte classiche alle torte gelato, fino alle torte nuziali con decorazioni personalizzate: pasticceria fresca e secca, meringhe, biscotti e i grandi dolci della tradizione locale, come i famosi Brutti e Buoni e il delizioso Dolce Varese.',
+      'Dalle torte classiche alle torte gelato, fino alle torte nuziali con decorazioni personalizzate: pasticceria fresca e secca, meringhe, biscotti e i grandi dolci della tradizione locale, come i famosi Brutti e Buoni e il delizioso Dolce Varese. Bontà autentiche, fatte come una volta.',
   },
 }
 
@@ -109,7 +109,7 @@ export const categories = [
     title: 'Torte & Dolci',
     image: img('5902101'),
     text:
-      'Torte farcite e da forno, semifreddi e creazioni artigianali per ogni occasione: Crostate di frutta, Saint Honoré, Meringate, Chantilly, torte al cioccolato e Sacher.',
+      'Torte farcite e da forno, semifreddi e creazioni artigianali per ogni occasione: dalle crostate di frutta fresca al Saint Honoré, dalla Chantilly alla Sacher. Ogni fetta è morbidezza, profumo e gusto autentico.',
     tags: ['Crostate', 'Saint Honoré', 'Chantilly', 'Sacher'],
   },
   {
@@ -117,7 +117,7 @@ export const categories = [
     title: 'Pasticceria Mignon',
     image: img('6028667'),
     text:
-      'Un vastissimo assortimento di piccola pasticceria: piccoli capolavori di dolcezza, perfetti per un’occasione speciale o per un momento di golosità quotidiana.',
+      'Un vastissimo assortimento di piccola pasticceria: piccoli capolavori rifiniti a mano, uno più goloso dell’altro, perfetti da gustare con gli occhi prima ancora che al palato.',
     tags: ['Pasticcini', 'Bignè', 'Tartellette', 'Frutta fresca'],
   },
   {
@@ -125,7 +125,7 @@ export const categories = [
     title: 'Cioccolato & Praline',
     image: img('4255320'),
     text:
-      'La nostra cioccolateria artigianale: praline, boeri, alkekengi, marrons glacés e scorze d’arancia candite ricoperte di cioccolato fondente, e mille altre golosità.',
+      'La nostra cioccolateria artigianale: praline, boeri, alkekengi, marrons glacés e scorze d’arancia candite ricoperte di fondente. Cioccolato puro, lavorato con pazienza per un gusto intenso e avvolgente.',
     tags: ['Praline', 'Boeri', 'Marrons glacés', 'Uova di Pasqua'],
   },
   {
@@ -133,7 +133,7 @@ export const categories = [
     title: 'Cake Design',
     image: img('6028661'),
     text:
-      'Torte spettacolari personalizzate con fotografie, disegni e decorazioni in pasta di zucchero, oltre a cupcake e biscottoni decorati su misura per il tuo tema.',
+      'Torte spettacolari personalizzate con fotografie, disegni e decorazioni in pasta di zucchero, modellate a mano nei minimi dettagli. Vere opere di zucchero, pensate per stupire senza rinunciare al gusto.',
     tags: ['Pasta di zucchero', 'Foto su torta', 'Cupcake', 'Su misura'],
   },
   {
@@ -141,7 +141,7 @@ export const categories = [
     title: 'Classici & Senza Lattosio',
     image: img('5902097'),
     text:
-      'I grandi classici della tradizione — Brutti e Buoni, Dolce Varese — e una linea dedicata senza lattosio, per gustare i nostri dolci in totale sicurezza e senza rinunce.',
+      'I grandi classici della tradizione — Brutti e Buoni, Dolce Varese — e una linea senza lattosio studiata con la stessa cura artigianale, per il piacere di un dolce buono e sicuro, davvero senza rinunce.',
     tags: ['Brutti e Buoni', 'Dolce Varese', 'Senza lattosio'],
   },
   {
@@ -149,7 +149,7 @@ export const categories = [
     title: 'Grandi Lievitati & Feste',
     image: img('4255275'),
     text:
-      'Panettoni, Pandori, Veneziane e Colombe secondo l’antica tradizione, senza conservanti. Per feste ed eventi: buffet dolce e salato, torte nuziali e confezioni regalo.',
+      'Panettoni, Pandori, Veneziane e Colombe secondo l’antica tradizione, senza conservanti: soffici e profumati come una volta. E per le feste, buffet e confezioni regalo curate nel gusto e nella presentazione.',
     tags: ['Panettone', 'Colomba', 'Buffet', 'Confezioni regalo'],
   },
 ]
@@ -159,7 +159,7 @@ export const ricorrenze = {
   kicker: 'Le nostre ricorrenze',
   title: 'Specialità delle feste',
   intro:
-    'Ogni festività ha il suo dolce. Preparati a mano nel nostro laboratorio, seguendo la tradizione e curando ogni dettaglio estetico.',
+    'Ogni festa ha il suo dolce. Preparati a mano nel nostro laboratorio, nel rispetto della tradizione e con una cura speciale per ogni dettaglio: buoni da gustare e bellissimi da regalare.',
   items: [
     {
       id: 'donna',
@@ -167,7 +167,7 @@ export const ricorrenze = {
       title: 'Festa della Donna',
       image: imgS('5964236'),
       text:
-        'La nostra Torta Mimosa: Pan di Spagna soffice, vellutata crema chantilly e macedonia, con l’inconfondibile finitura artigianale a cubetti che ricrea i fiori di mimosa. Disponibile anche nella scenografica versione Mimosa Red ai frutti di bosco.',
+        'La nostra Torta Mimosa: Pan di Spagna soffice, vellutata crema chantilly e macedonia di frutta, con l’inconfondibile finitura a cubetti fatta a mano che ricrea la luminosità dei fiori di mimosa. Un dolce semplice ma raffinato, anche nella scenografica versione Mimosa Red ai frutti di bosco.',
     },
     {
       id: 'papa',
@@ -175,7 +175,15 @@ export const ricorrenze = {
       title: 'Festa del Papà',
       image: imgS('5964238'),
       text:
-        'Torte personalizzate che parlano di lui — a forma di camicia, di cuore o con la sua fotografia — e le iconiche Zeppole di San Giuseppe, al forno o fritte, farcite con crema pasticcera e panna.',
+        'Torte personalizzate che parlano di lui — a forma di camicia, di cuore o con la sua fotografia — modellate a mano e curate nei minimi particolari, per stupirlo con un regalo dolce e indimenticabile.',
+    },
+    {
+      id: 'zeppole',
+      period: '19 Marzo · San Giuseppe',
+      title: 'Zeppole di San Giuseppe',
+      image: imgS('4227631'),
+      text:
+        'Le iconiche Zeppole di San Giuseppe: pasta friabile e dorata, disponibile al forno per chi ama la leggerezza o fritta come vuole l’antica ricetta. Farcite generosamente con crema pasticcera e panna, in formato grande o mignon: un peccato di gola irresistibile.',
     },
     {
       id: 'epifania',
@@ -183,7 +191,7 @@ export const ricorrenze = {
       title: 'Cammelli di Sfoglia',
       image: imgS('6013945'),
       text:
-        'La tradizione dell’Epifania: cammelli di pasta sfoglia friabili, leggeri e dorati, realizzati a mano con burro di panna di alta qualità. Classici con zucchero caramellato o farciti con crema, panna fresca e cioccolato.',
+        'La tradizione dell’Epifania: cammelli di pasta sfoglia friabili, leggeri e dorati, sfogliati a mano con burro di panna di alta qualità. Classici con zucchero caramellato in superficie o farciti con crema, panna fresca, chantilly e cioccolato.',
     },
     {
       id: 'pasqua',
@@ -191,7 +199,7 @@ export const ricorrenze = {
       title: 'Uova & Cioccolato di Pasqua',
       image: imgS('5150968'),
       text:
-        'Uova artigianali in cioccolato puro al latte, fondente o bianco, con decori interamente fatti a mano: piccole opere d’arte. Sorpresa personalizzata su richiesta (servizio gratuito) e un mondo di soggetti in cioccolato.',
+        'Uova artigianali in cioccolato puro — al latte, fondente o bianco — con decori interamente fatti a mano: piccole opere d’arte. Sorpresa personalizzata su richiesta (servizio gratuito) e un intero mondo di soggetti in cioccolato.',
     },
   ],
 }

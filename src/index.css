@@ -244,8 +244,9 @@ h1, h2, h3, h4 { font-family: var(--serif); font-weight: 600; line-height: 1.15;
    Ricorrenze (specialità stagionali)
    =========================================================== */
 .ricorrenze { background: linear-gradient(180deg, var(--cream), var(--cream-2)); }
-.rcards { display: grid; grid-template-columns: repeat(4, 1fr); gap: clamp(1.1rem, 2.2vw, 1.6rem); }
+.rcards { display: flex; flex-wrap: wrap; justify-content: center; gap: clamp(1.1rem, 2.2vw, 1.6rem); }
 .rcard {
+  flex: 1 1 300px; max-width: 380px;
   background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius);
   overflow: hidden; display: flex; flex-direction: column;
   box-shadow: var(--shadow-sm); transition: transform .3s ease, box-shadow .3s ease;
@@ -404,7 +405,6 @@ h1, h2, h3, h4 { font-family: var(--serif); font-weight: 600; line-height: 1.15;
   .feature { grid-template-columns: 1fr; gap: 1.4rem; }
   .feature--reverse .feature__media { order: 0; }
   .feature__media img { aspect-ratio: 16 / 10; }
-  .rcards { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 1000px) and (min-width: 761px) {
@@ -435,7 +435,7 @@ h1, h2, h3, h4 { font-family: var(--serif); font-weight: 600; line-height: 1.15;
 
 @media (max-width: 520px) {
   .cards { grid-template-columns: 1fr; }
-  .rcards { grid-template-columns: 1fr; }
+  .rcard { max-width: none; }
   .values { grid-template-columns: 1fr; }
   .footer__inner { grid-template-columns: 1fr; }
   .contact__actions .btn, .hero__actions .btn { flex: 1; }
