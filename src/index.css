@@ -129,7 +129,7 @@ h1, h2, h3, h4 { font-family: var(--serif); font-weight: 600; line-height: 1.15;
 }
 .nav:not(.nav--scrolled) .brand__sub { color: var(--gold-soft); }
 
-.nav__links { display: flex; align-items: center; gap: 2rem; }
+.nav__links { display: flex; align-items: center; gap: 1.5rem; }
 .nav__links a {
   font-size: .84rem; font-weight: 700; letter-spacing: .06em;
   text-transform: uppercase; color: var(--choc-700); position: relative; padding: .3rem 0;
@@ -246,7 +246,7 @@ h1, h2, h3, h4 { font-family: var(--serif); font-weight: 600; line-height: 1.15;
 .ricorrenze { background: linear-gradient(180deg, var(--cream), var(--cream-2)); }
 .rcards { display: flex; flex-wrap: wrap; justify-content: center; gap: clamp(1.1rem, 2.2vw, 1.6rem); }
 .rcard {
-  flex: 1 1 300px; max-width: 380px;
+  flex: 1 1 250px; max-width: 300px;
   background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius);
   overflow: hidden; display: flex; flex-direction: column;
   box-shadow: var(--shadow-sm); transition: transform .3s ease, box-shadow .3s ease;
@@ -395,6 +395,40 @@ h1, h2, h3, h4 { font-family: var(--serif); font-weight: 600; line-height: 1.15;
 .cosa__territorio .btn { margin-top: 1.2rem; }
 
 /* ===========================================================
+   Recensioni
+   =========================================================== */
+.recensioni { background: linear-gradient(180deg, var(--cream-2), var(--cream)); }
+.reviews { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(1.1rem, 2.4vw, 1.8rem); }
+.review {
+  margin: 0; background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 1.6rem 1.5rem; box-shadow: var(--shadow-sm);
+  display: flex; flex-direction: column; gap: .9rem;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.review:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+.stars { font-size: 1rem; letter-spacing: .12em; color: var(--gold); line-height: 1; }
+.stars__empty { color: rgba(62, 39, 35, .18); }
+.review__text {
+  margin: 0; font-family: var(--serif-2); font-size: 1.16rem; line-height: 1.5;
+  color: var(--choc-800); font-style: italic; flex: 1;
+}
+.review__meta { display: flex; align-items: center; gap: .7rem; }
+.review__avatar {
+  width: 40px; height: 40px; flex-shrink: 0; border-radius: 50%;
+  background: linear-gradient(135deg, var(--gold), var(--gold-dark)); color: #fff;
+  display: grid; place-items: center; font-family: var(--serif); font-weight: 600; font-size: 1.1rem;
+}
+.review__meta strong { display: block; color: var(--choc-800); font-size: .95rem; }
+.review__meta small { color: var(--muted); font-size: .8rem; }
+.reviews__cta { text-align: center; margin-top: clamp(1.8rem, 4vw, 2.8rem); }
+
+/* ===========================================================
+   Rivelazione allo scroll
+   =========================================================== */
+.js-reveal .reveal { opacity: 0; transform: translateY(28px); transition: opacity .7s ease, transform .7s cubic-bezier(.2,.7,.2,1); }
+.js-reveal .reveal.is-visible { opacity: 1; transform: none; }
+
+/* ===========================================================
    Responsive
    =========================================================== */
 @media (max-width: 940px) {
@@ -402,6 +436,7 @@ h1, h2, h3, h4 { font-family: var(--serif); font-weight: 600; line-height: 1.15;
   .cards { grid-template-columns: repeat(2, 1fr); }
   .contact__grid { grid-template-columns: 1fr; }
   .footer__inner { grid-template-columns: 1fr 1fr; }
+  .reviews { grid-template-columns: repeat(2, 1fr); }
   .feature { grid-template-columns: 1fr; gap: 1.4rem; }
   .feature--reverse .feature__media { order: 0; }
   .feature__media img { aspect-ratio: 16 / 10; }
@@ -436,6 +471,7 @@ h1, h2, h3, h4 { font-family: var(--serif); font-weight: 600; line-height: 1.15;
 @media (max-width: 520px) {
   .cards { grid-template-columns: 1fr; }
   .rcard { max-width: none; }
+  .reviews { grid-template-columns: 1fr; }
   .values { grid-template-columns: 1fr; }
   .footer__inner { grid-template-columns: 1fr; }
   .contact__actions .btn, .hero__actions .btn { flex: 1; }

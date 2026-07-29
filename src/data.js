@@ -18,7 +18,14 @@ export const shop = {
   phoneHours: 'dalle 9:00 alle 12:30 e dalle 15:30 alle 19:00',
   whatsapp: '02 9606534',
   whatsappRaw: '390296065340',
+  whatsappUrl:
+    'https://wa.me/390296065340?text=' +
+    encodeURIComponent(
+      'Ciao Pasticceria Manzoni! Vorrei fare un ordine o avere un’informazione sui vostri prodotti.',
+    ),
   email: 'pasticceriamanzoni@gmail.com',
+  googleReviewsUrl:
+    'https://www.google.com/maps/place/Pasticceria+Manzoni/@45.6240393,9.0401694,17z/data=!4m6!3m5!1s0x478691565112a24f:0x79605434abfffaf5!8m2!3d45.6240393!4d9.0401694!16s%2Fg%2F1thtb_vv',
   hours: [
     { day: 'Lunedì', time: 'Chiuso', closed: true },
     { day: 'Martedì', time: '08:30 – 12:30 · 15:00 – 19:15' },
@@ -162,6 +169,30 @@ export const ricorrenze = {
     'Ogni festa ha il suo dolce. Preparati a mano nel nostro laboratorio, nel rispetto della tradizione e con una cura speciale per ogni dettaglio: buoni da gustare e bellissimi da regalare.',
   items: [
     {
+      id: 'natale',
+      period: 'Natale',
+      title: 'Panettoni & Grandi Lievitati',
+      image: imgS('3861263'),
+      text:
+        'I nostri panettoni nascono dalle mani sapienti dei maestri pasticceri: doppio impasto, lenta lievitazione naturale di molte ore, lavorazione a mano e pirlatura. Produzione limitata, da prenotare con anticipo. Disponibile anche il Panettone Gastronomico (20, 30 o 40 spicchi) con farciture fresche.',
+    },
+    {
+      id: 'epifania',
+      period: 'Epifania · 6 Gennaio',
+      title: 'Cammelli di Sfoglia',
+      image: imgS('6013945'),
+      text:
+        'La tradizione dell’Epifania: cammelli di pasta sfoglia friabili, leggeri e dorati, sfogliati a mano con burro di panna di alta qualità. Classici con zucchero caramellato in superficie o farciti con crema, panna fresca, chantilly e cioccolato.',
+    },
+    {
+      id: 'valentino',
+      period: '14 Febbraio',
+      title: 'San Valentino',
+      image: imgS('5964233'),
+      text:
+        'Torte a forma di cuore per celebrare l’amore, dalla classica crema ai gusti più ricercati, decorate a mano con cura. Personalizzabili con una dedica speciale, una decorazione esclusiva o la vostra fotografia: un regalo su misura e indimenticabile.',
+    },
+    {
       id: 'donna',
       period: '8 Marzo',
       title: 'Festa della Donna',
@@ -179,19 +210,11 @@ export const ricorrenze = {
     },
     {
       id: 'zeppole',
-      period: '19 Marzo · San Giuseppe',
+      period: 'San Giuseppe',
       title: 'Zeppole di San Giuseppe',
       image: imgS('4227631'),
       text:
         'Le iconiche Zeppole di San Giuseppe: pasta friabile e dorata, disponibile al forno per chi ama la leggerezza o fritta come vuole l’antica ricetta. Farcite generosamente con crema pasticcera e panna, in formato grande o mignon: un peccato di gola irresistibile.',
-    },
-    {
-      id: 'epifania',
-      period: 'Epifania · 6 Gennaio',
-      title: 'Cammelli di Sfoglia',
-      image: imgS('6013945'),
-      text:
-        'La tradizione dell’Epifania: cammelli di pasta sfoglia friabili, leggeri e dorati, sfogliati a mano con burro di panna di alta qualità. Classici con zucchero caramellato in superficie o farciti con crema, panna fresca, chantilly e cioccolato.',
     },
     {
       id: 'pasqua',
@@ -200,6 +223,46 @@ export const ricorrenze = {
       image: imgS('5150968'),
       text:
         'Uova artigianali in cioccolato puro — al latte, fondente o bianco — con decori interamente fatti a mano: piccole opere d’arte. Sorpresa personalizzata su richiesta (servizio gratuito) e un intero mondo di soggetti in cioccolato.',
+    },
+  ],
+}
+
+// Recensioni reali dei clienti (fonte: Google, via aggregatori pubblici — 2025)
+export const reviews = {
+  kicker: 'Dicono di noi',
+  title: 'La soddisfazione dei nostri clienti',
+  intro:
+    'Recensioni reali lasciate dai clienti su Google. Grazie a chi ci sceglie ogni giorno!',
+  items: [
+    {
+      name: 'Cecilia',
+      date: 'Novembre 2025',
+      stars: 5,
+      text: 'Abbiamo ordinato una torta con crema chantilly e frutti di bosco: veramente squisita. Bella da vedere e buonissima da gustare! Complimenti, consiglio vivamente!',
+    },
+    {
+      name: 'Samuele',
+      date: 'Dicembre 2025',
+      stars: 5,
+      text: 'Faccio acquisti alla Pasticceria Manzoni da diversi mesi e sono veramente contento del servizio offerto e della qualità dei prodotti. Abbiamo preso una colomba artigianale ed era di qualità eccellente.',
+    },
+    {
+      name: 'Andrea',
+      date: 'Dicembre 2025',
+      stars: 5,
+      text: 'Ottima pasticceria: tortelli fritti ottimi, chiacchiere sublimi e dolci buonissimi.',
+    },
+    {
+      name: 'Mariella',
+      date: 'Ottobre 2025',
+      stars: 5,
+      text: 'Mi sono sempre trovata bene, sia per i prodotti che per l’accoglienza e la gentilezza. I dolci e i salati sono sempre buonissimi.',
+    },
+    {
+      name: 'Simona',
+      date: 'Settembre 2025',
+      stars: 5,
+      text: 'A Saronno, la mia pasticceria preferita da sempre. Qualità e cortesia.',
     },
   ],
 }
@@ -245,5 +308,6 @@ export const nav = [
   { href: '#vetrina', label: 'Vetrina' },
   { href: '#ricorrenze', label: 'Ricorrenze' },
   { href: '#gallery', label: 'Gallery' },
+  { href: '#recensioni', label: 'Recensioni' },
   { href: '#contatti', label: 'Contatti' },
 ]

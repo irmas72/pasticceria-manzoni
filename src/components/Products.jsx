@@ -41,7 +41,7 @@ export default function Products() {
           </p>
           <a
             className="btn btn--gold"
-            href={`https://wa.me/${shop.whatsappRaw}`}
+            href={shop.whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
           >

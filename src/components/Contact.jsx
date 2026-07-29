@@ -45,7 +45,7 @@ export default function Contact() {
                 <strong>WhatsApp</strong>
                 <br />
                 <a
-                  href={`https://wa.me/${shop.whatsappRaw}`}
+                  href={shop.whatsappUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -77,7 +77,7 @@ export default function Contact() {
               <a className="btn btn--gold" href={`tel:${shop.phoneRaw}`}>Chiama ora</a>
               <a
                 className="btn btn--dark"
-                href={`https://wa.me/${shop.whatsappRaw}`}
+                href={shop.whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
               >
