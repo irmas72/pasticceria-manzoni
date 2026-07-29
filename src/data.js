@@ -14,12 +14,12 @@ export const shop = {
     'Da oltre 45 anni ogni dolce nasce a mano nel nostro laboratorio: materie prime naturali di prima scelta, i gesti lenti della tradizione e una cura meticolosa per ogni dettaglio. Perché la bellezza di una creazione è già una promessa di bontà.',
   address: 'Via Manzoni 2/a, 21047 Saronno (VA)',
   phone: '02 9606534',
-  phoneRaw: '+390296065340',
+  phoneRaw: '+39029606534',
   phoneHours: 'dalle 9:00 alle 12:30 e dalle 15:30 alle 19:00',
   whatsapp: '02 9606534',
-  whatsappRaw: '390296065340',
+  whatsappRaw: '39029606534',
   whatsappUrl:
-    'https://wa.me/390296065340?text=' +
+    'https://wa.me/39029606534?text=' +
     encodeURIComponent(
       'Ciao Pasticceria Manzoni! Vorrei fare un ordine o avere un’informazione sui vostri prodotti.',
     ),
