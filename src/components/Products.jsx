@@ -9,8 +9,8 @@ export default function Products() {
           <h2 className="section__title">Le nostre creazioni</h2>
           <p className="section__intro">
             Dalle torte per ogni occasione alla piccola pasticceria, dal cioccolato
-            artigianale al cake design: ogni prodotto è preparato ogni giorno nel nostro
-            laboratorio.
+            artigianale al cake design: ogni prodotto è lavorato a mano, ogni giorno,
+            con la stessa cura per il gusto e per l’estetica.
           </p>
         </div>
 
