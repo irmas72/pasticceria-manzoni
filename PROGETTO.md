@@ -105,7 +105,34 @@ Pasticceria/
 - [x] Componenti (Navbar, Hero, Chi siamo, Vetrina, Gallery, Contatti, Footer)
 - [x] Stile elegante + responsive (mobile menu, lightbox)
 - [x] Installazione dipendenze e verifica build
-- [ ] Pubblicazione online (hosting) — da definire con il committente
+- [x] **Repository su GitHub** (account `irmas72`)
+- [x] **Pubblicazione online su Vercel** (account `irmas72-3288`, login Google)
+
+---
+
+## 5-bis. Pubblicazione (GitHub + Vercel)
+
+| Cosa | Link |
+|---|---|
+| 🌐 **Sito LIVE** | **https://pasticceria-manzoni.vercel.app** |
+| 📦 Repository GitHub | https://github.com/irmas72/pasticceria-manzoni |
+| 🔎 Dashboard Vercel | https://vercel.com/irmas72-3288s-projects/pasticceria-manzoni |
+
+- Account GitHub: **irmas72** · Account Vercel: **irmas72-3288** (login con Google `irmas72@gmail.com`).
+- Deploy effettuato con **Vercel CLI** (`vercel --prod`). Build eseguita da Vercel (Vite → `dist/`).
+- File `.vercel/` e `.env.local` sono **esclusi da git** (contengono il link al progetto e token locali).
+
+### ⚠️ Deploy automatico ad ogni push — DA COMPLETARE
+Il collegamento automatico GitHub↔Vercel non è ancora attivo: al login Vercel è stato
+usato **Google**, non GitHub, quindi manca la "Login Connection" a GitHub.
+Per attivare il deploy automatico ad ogni `git push`:
+1. Vai su **vercel.com → Settings → Connections** (o Login Connections) e collega **GitHub**.
+2. Nel progetto: **Settings → Git → Connect Git Repository** → scegli `irmas72/pasticceria-manzoni`.
+
+Finché non è collegato, per aggiornare il sito online si rilancia da terminale:
+```bash
+vercel --prod
+```
 
 ---
 
