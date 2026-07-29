@@ -11,7 +11,7 @@ export const shop = {
   years: 'oltre 45 anni',
   tagline: 'Alta pasticceria artigianale nel cuore di Saronno',
   intro:
-    'Da oltre 45 anni ogni dolce nasce a mano nel nostro laboratorio: materie prime naturali di prima scelta, i gesti lenti della tradizione e una cura quasi maniacale per ogni dettaglio. Perché la bellezza di una creazione è già una promessa di bontà.',
+    'Da oltre 45 anni ogni dolce nasce a mano nel nostro laboratorio: materie prime naturali di prima scelta, i gesti lenti della tradizione e una cura meticolosa per ogni dettaglio. Perché la bellezza di una creazione è già una promessa di bontà.',
   address: 'Via Manzoni 2/a, 21047 Saronno (VA)',
   phone: '02 9606535',
   phoneRaw: '+390296065350',
@@ -47,7 +47,7 @@ export const values = [
   },
   {
     icon: 'star',
-    title: 'Cura maniacale del dettaglio',
+    title: 'Cura del dettaglio',
     text: 'Rifiniture eseguite a mano e decori curati uno a uno: ogni dolce è bello da guardare prima ancora che buono da gustare.',
   },
   {
