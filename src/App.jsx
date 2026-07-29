@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import { LightboxProvider } from './lightbox.jsx'
 import Navbar from './components/Navbar.jsx'
 import Hero from './components/Hero.jsx'
 import About from './components/About.jsx'
@@ -33,11 +34,19 @@ export default function App() {
       { threshold: 0.08, rootMargin: '0px 0px -8% 0px' },
     )
     els.forEach((el) => io.observe(el))
-    return () => io.disconnect()
+
+    // Sicurezza: se per qualsiasi motivo l'osservatore non scatta,
+    // dopo un po' mostriamo comunque tutto (il contenuto non resta mai nascosto).
+    const fallback = setTimeout(() => els.forEach((el) => el.classList.add('is-visible')), 2600)
+
+    return () => {
+      io.disconnect()
+      clearTimeout(fallback)
+    }
   }, [])
 
   return (
-    <>
+    <LightboxProvider>
       <Navbar />
       <main>
         <Hero />
@@ -50,6 +59,6 @@ export default function App() {
         <Contact />
       </main>
       <Footer />
-    </>
+    </LightboxProvider>
   )
 }

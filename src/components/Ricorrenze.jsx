@@ -1,7 +1,10 @@
 import { ricorrenze } from '../data.js'
+import { useLightbox } from '../lightbox.jsx'
 
 export default function Ricorrenze() {
   const { kicker, title, intro, items } = ricorrenze
+  const open = useLightbox()
+  const photos = items.map((r) => ({ src: r.image, caption: r.title }))
 
   return (
     <section id="ricorrenze" className="section ricorrenze">
@@ -13,12 +16,17 @@ export default function Ricorrenze() {
         </div>
 
         <div className="rcards">
-          {items.map((r) => (
+          {items.map((r, i) => (
             <article key={r.id} className="rcard">
-              <div className="rcard__media">
+              <button
+                type="button"
+                className="rcard__media zoomable"
+                onClick={() => open(photos, i)}
+                aria-label={`Ingrandisci: ${r.title}`}
+              >
                 <img src={r.image} alt={r.title} loading="lazy" />
                 <span className="rcard__period">{r.period}</span>
-              </div>
+              </button>
               <div className="rcard__body">
                 <h3 className="rcard__title">{r.title}</h3>
                 <p className="rcard__text">{r.text}</p>

@@ -1,6 +1,9 @@
 import { categories, shop } from '../data.js'
+import { useLightbox } from '../lightbox.jsx'
 
 export default function Products() {
+  const open = useLightbox()
+  const items = categories.map((c) => ({ src: c.image, caption: c.title }))
   return (
     <section id="vetrina" className="section products">
       <div className="container">
@@ -15,11 +18,16 @@ export default function Products() {
         </div>
 
         <div className="cards">
-          {categories.map((c) => (
+          {categories.map((c, i) => (
             <article key={c.id} className="card">
-              <div className="card__media">
+              <button
+                type="button"
+                className="card__media zoomable"
+                onClick={() => open(items, i)}
+                aria-label={`Ingrandisci: ${c.title}`}
+              >
                 <img src={c.image} alt={c.title} loading="lazy" />
-              </div>
+              </button>
               <div className="card__body">
                 <h3 className="card__title">{c.title}</h3>
                 <p className="card__text">{c.text}</p>

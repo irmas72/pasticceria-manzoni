@@ -1,8 +1,16 @@
 import { heroImage, shop } from '../data.js'
+import { useLightbox } from '../lightbox.jsx'
 
 export default function Hero() {
+  const open = useLightbox()
+  // Clic sull'hero apre la foto a schermo intero, tranne che sui pulsanti/link.
+  const onHeroClick = (e) => {
+    if (e.target.closest('a, button')) return
+    open([{ src: heroImage, caption: 'Pasticceria Manzoni · Saronno' }], 0)
+  }
+
   return (
-    <section id="home" className="hero">
+    <section id="home" className="hero hero--zoom" onClick={onHeroClick}>
       <div
         className="hero__bg"
         style={{ backgroundImage: `url(${heroImage})` }}

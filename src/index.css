@@ -423,6 +423,18 @@ h1, h2, h3, h4 { font-family: var(--serif); font-weight: 600; line-height: 1.15;
 .reviews__cta { text-align: center; margin-top: clamp(1.8rem, 4vw, 2.8rem); }
 
 /* ===========================================================
+   Immagini cliccabili (zoom / lightbox)
+   =========================================================== */
+.zoomable {
+  appearance: none; -webkit-appearance: none;
+  border: 0; margin: 0; padding: 0; background: none; font: inherit; color: inherit;
+  display: block; width: 100%; cursor: zoom-in;
+}
+.masonry__item { cursor: zoom-in; }
+.hero--zoom { cursor: zoom-in; }
+.hero--zoom .btn, .hero__scroll { cursor: pointer; }
+
+/* ===========================================================
    Rivelazione allo scroll
    =========================================================== */
 .js-reveal .reveal { opacity: 0; transform: translateY(28px); transition: opacity .7s ease, transform .7s cubic-bezier(.2,.7,.2,1); }

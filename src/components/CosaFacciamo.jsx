@@ -1,7 +1,10 @@
 import { cosaFacciamo, shop } from '../data.js'
+import { useLightbox } from '../lightbox.jsx'
 
 export default function CosaFacciamo() {
   const { kicker, title, intro, features, territorio } = cosaFacciamo
+  const open = useLightbox()
+  const items = features.map((f) => ({ src: f.image, caption: f.title }))
 
   return (
     <section id="cosa-facciamo" className="section cosa">
@@ -18,9 +21,14 @@ export default function CosaFacciamo() {
               key={f.id}
               className={`feature ${i % 2 === 1 ? 'feature--reverse' : ''}`}
             >
-              <div className="feature__media">
+              <button
+                type="button"
+                className="feature__media zoomable"
+                onClick={() => open(items, i)}
+                aria-label={`Ingrandisci: ${f.title}`}
+              >
                 <img src={f.image} alt={f.title} loading="lazy" />
-              </div>
+              </button>
               <div className="feature__body">
                 <p className="feature__eyebrow">{f.eyebrow}</p>
                 <h3 className="feature__title">{f.title}</h3>
