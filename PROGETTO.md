@@ -34,7 +34,7 @@ Fonte contenuti e immagini: sito attuale **http://www.pasticceriamanzoni.com/**
 | Nome | **Pasticceria Manzoni** — Saronno |
 | Storia | Laboratorio artigianale da **oltre 45 anni** (dal 1980) |
 | Indirizzo | Via Manzoni 2/a, 21047 **Saronno (VA)** |
-| Telefono | **02 9606535** (info 9:00–12:30 / 15:30–19:00) |
+| Telefono | **02 9606534** (info 9:00–12:30 / 15:30–19:00) |
 | WhatsApp | **02 9606534** (numero fisso con WhatsApp Business) |
 | Email | **pasticceriamanzoni@gmail.com** |
 | Orari | Lun **chiuso** · Mar–Dom **08:30–12:30 / 15:00–19:15** |
