@@ -3,6 +3,13 @@
 > Documento di tracciamento del progetto. Aggiornato man mano che il lavoro procede.
 > Ultimo aggiornamento: **2026-07-29**
 
+## 🔴 In breve (stato attuale)
+- 🌐 **LIVE:** https://pasticceria-manzoni.vercel.app · 📦 repo: github.com/irmas72/pasticceria-manzoni
+- **Deploy:** lo fa Claude con `vercel --prod` ad ogni modifica (no auto-deploy). Verifica sempre mobile (locale + live).
+- **Sezioni:** Home · Chi siamo · Cosa facciamo · Vetrina · Ricorrenze (7, cronologiche) · Gallery · **Recensioni (Google, reali)** · Contatti
+- **Extra:** SEO dati strutturati (Bakery), WhatsApp precompilato, animazioni allo scroll, foto inutilizzate in `_originali/` (escluse dal deploy via `.vercelignore`).
+- **Testi:** tono su bontà/artigianalità/cura del dettaglio. ❌ evitare "maniacale".
+
 ---
 
 ## 1. Obiettivo
